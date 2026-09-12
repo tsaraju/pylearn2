@@ -1,0 +1,176 @@
+Create a menu-driven Python application where a user can perform different activities:
+
+1 Login
+2 Calculate
+3 Read a File
+4 Write a File
+5 Logout
+
+Generate logs for
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+
+For example
+INFO User logged in
+INFO Calculation completed
+WARNING File was empty
+ERROR File could not be opened
+CRITICAL Unexpected application failure
+Store logs inside
+
+logs/
+application.log
+error.log
+
+Use exception handling so that an error in one operation does not terminate the entire application.
+Separate the application into multiple modules instead of writing everything in main.py.
+
+Sample Input:
+Provide the options when keyboard is expecitng input from user
+
+Sample Output:
+python .\main.py
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 1
+Enter username: admin
+Enter password: admin
+Login failed: Invalid username or password.
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 2
+Please login first.
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 1
+Enter username: admin
+Enter password: admin123
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 2
+Enter first number: 10
+Enter second number: 30
+Enter operation (+, -, *, /): *
+Result: 300.0
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 4
+Enter file name to write: a.txt
+Enter content to write: hi hello 
+File written successfully.
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 3
+Enter file name to read: a.txt
+
+File contents:
+hi hello
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 5
+Successfully logged out.
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
+Enter your choice: 6
+Goodbye!
+
+Logs:
+application.log:
+2026-09-12 18:17:17,481 - INFO - Application started
+2026-09-12 18:17:19,452 - DEBUG - User selected menu option: 1
+2026-09-12 18:17:24,572 - WARNING - Invalid login attempt
+2026-09-12 18:17:47,288 - DEBUG - User selected menu option: 2
+2026-09-12 18:17:47,289 - WARNING - Calculation attempted without login
+2026-09-12 18:17:49,408 - DEBUG - User selected menu option: 1
+2026-09-12 18:18:00,934 - INFO - User logged in
+2026-09-12 18:18:07,697 - DEBUG - User selected menu option: 2
+2026-09-12 18:18:07,698 - DEBUG - Calculation operation started
+2026-09-12 18:18:18,177 - INFO - Calculation completed
+2026-09-12 18:18:23,379 - DEBUG - User selected menu option: 4
+2026-09-12 18:18:35,823 - DEBUG - Attempting to write file: a.txt
+2026-09-12 18:18:35,826 - INFO - File written successfully: a.txt
+2026-09-12 18:18:39,636 - DEBUG - User selected menu option: 3
+2026-09-12 18:18:42,490 - DEBUG - Attempting to read file: a.txt
+2026-09-12 18:18:42,492 - INFO - File read successfully: a.txt
+2026-09-12 18:18:57,070 - DEBUG - User selected menu option: 5
+2026-09-12 18:18:57,070 - INFO - User logged out
+2026-09-12 18:18:58,973 - DEBUG - User selected menu option: 6
+2026-09-12 18:18:58,973 - INFO - Application stopped
+
+error.log:
+2026-09-12 18:17:24,573 - ERROR - Login error: Invalid username or password.

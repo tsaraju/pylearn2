@@ -28,3 +28,11 @@ notes.txt moves to Text/ folder
 report.pdf moves to Documents/ folder
 data.csv moves to Data/ folder
 program.exe will not move to any directory as it is unsupported file type
+
+Logs:
+2026-09-12 18:10:43,915 - INFO - SUCCESS: Moved 'my_folder\data.csv' to 'my_folder\Data\data.csv'
+2026-09-12 18:10:43,917 - INFO - SUCCESS: Moved 'my_folder\notes.txt' to 'my_folder\Text\notes.txt'
+2026-09-12 18:10:43,918 - INFO - SUCCESS: Moved 'my_folder\photo.jpg' to 'my_folder\Images\photo.jpg'
+2026-09-12 18:10:43,918 - ERROR - FAILED: Unsupported file type: .exe
+2026-09-12 18:10:43,919 - INFO - SUCCESS: Moved 'my_folder\report.pdf' to 'my_folder\Documents\report.pdf'
+
