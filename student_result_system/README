@@ -1,0 +1,49 @@
+Create a Python program that reads student details and marks for 5 subjects and calculates total, percentage, grade, and pass/fail status.
+
+The program must handle incorrect marks, non-numeric input, marks outside 0–100, missing student information, and division/calculation errors. 
+Create at least one custom exception, such as InvalidMarksError.
+Instead of stopping when an error occurs, the program should log the error and continue processing the remaining students.
+Use separate modules for student operations, result calculation, exception definitions, and logging configuration.
+
+Sample Input:
+Enter marks of students
+
+Sample Output:
+python .\main.py
+Enter the number of students: 2
+
+Processing Student 1
+Enter student name: rani
+Enter roll number: 2
+Enter marks for subject 1: 70
+Enter marks for subject 2: 87
+Enter marks for subject 3: 96
+Enter marks for subject 4: 79
+Enter marks for subject 5: 89
+
+----- Student Result -----
+Name       : rani
+Roll Number: 2
+Total      : 421.00
+Percentage : 84.20%
+Grade      : A
+Status     : PASS
+--------------------------
+
+Processing Student 2
+Enter student name: raju
+Enter roll number: 6
+Enter marks for subject 1: 90
+Enter marks for subject 2: 96
+Enter marks for subject 3: 87
+Enter marks for subject 4: 95
+Enter marks for subject 5: 99
+
+----- Student Result -----
+Name       : raju
+Roll Number: 6
+Total      : 467.00
+Percentage : 93.40%
+Grade      : A+
+Status     : PASS
+--------------------------
