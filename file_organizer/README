@@ -1,0 +1,30 @@
+Create a Python program that organizes files from a folder based on their extensions.
+
+For example
+photo.jpg → Images/
+notes.txt → Text/
+report.pdf → Documents/
+data.csv → Data/
+
+Create separate modules for file detection, file movement, logging, and exception handling.
+Your program must handle situations such as a file not existing, destination folder missing, duplicate filenames, permission errors, and unsupported file types.
+Create at least one custom exception such as
+class UnsupportedFileError(Exception)
+pass
+Every successful and failed file operation should be recorded in a log file.
+
+Sample Input:
+My Folder is having the following files in it
+photo.jpg
+notes.txt
+report.pdf
+data.csv
+program.exe
+
+Sample Output:
+python .\main.py my_folder
+photo.jpg moves to Images/ folder
+notes.txt moves to Text/ folder
+report.pdf moves to Documents/ folder
+data.csv moves to Data/ folder
+program.exe will not move to any directory as it is unsupported file type
