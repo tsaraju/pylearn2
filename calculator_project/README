@@ -1,0 +1,94 @@
+Instruction: Instead of writing everything inside one Python file, create your own reusable Python package.
+
+Structure it approximately like
+
+calculator_tools/
+__init__.py
+arithmetic.py
+statistics.py
+converter.py
+exceptions.py
+main.py
+
+The package should provide functions for basic arithmetic, percentage calculation, average calculation, temperature conversion, and simple unit conversion.
+Handle errors such as division by zero, invalid values, incorrect data types, and unsupported operations.
+Create your own custom exception
+InvalidOperationError
+
+Sample Input:
+    # Basic arithmetic
+    print("\nArithmetic:")
+    print("10 + 5 =", add(10, 5))
+    print("10 - 5 =", subtract(10, 5))
+    print("10 * 5 =", multiply(10, 5))
+    print("10 / 5 =", divide(10, 5))
+
+    # Using the generic calculate function
+    print("\nGeneric calculation:")
+    print("20 + 4 =", calculate(20, 4, "add"))
+    print("20 / 4 =", calculate(20, 4, "divide"))
+
+    # Percentage
+    print("\nPercentage:")
+    print("25 is", percentage(25, 100), "% of 100")
+
+    # Average
+    print("\nAverage:")
+    numbers = [10, 20, 30, 40, 50]
+    print("Average:", average(numbers))
+
+    # Temperature conversion
+    print("\nTemperature conversion:")
+    print("25 C =", celsius_to_fahrenheit(25), "F")
+    print("77 F =", fahrenheit_to_celsius(77), "C")
+
+    # Unit conversion
+    print("\nLength conversion:")
+    print("5 km =", convert_length(5, "km", "m"), "m")
+    print("250 cm =", convert_length(250, "cm", "m"), "m")
+
+    # Error handling
+    print("\nError handling:")
+    divide(10, 0)
+    average([])
+    add(10, "5")
+    convert_length(10, "mile", "km")
+
+if __name__ == "__main__":
+    main()
+
+
+Sample Output:
+python -m calculator_tools.main
+
+=== Calculator Tools Demo ===
+
+Arithmetic:
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2.0
+
+Generic calculation:
+20 + 4 = 24
+20 / 4 = 5.0
+
+Percentage:
+25 is 25.0 % of 100
+
+Average:
+Average: 30.0
+
+Temperature conversion:
+25 C = 77.0 F
+77 F = 25.0 C
+
+Length conversion:
+5 km = 5000.0 m
+250 cm = 2.5 m
+
+Error handling:
+Division error: Cannot divide by zero.
+Value error: Values cannot be empty.
+Type error: Second value must be a number.
+Operation error: Unsupported source unit: mile
