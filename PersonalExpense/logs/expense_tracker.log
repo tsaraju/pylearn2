@@ -1,0 +1,35 @@
+2026-09-13 21:54:45,356 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpa13bgqms\data\expenses.json
+2026-09-13 21:54:45,356 - WARNING - Operation failed: Could not save expenses to C:\Users\user\AppData\Local\Temp\tmpa13bgqms\data\expenses.json: [Errno 2] No such file or directory: 'C:\\Users\\user\\AppData\\Local\\Temp\\tmpa13bgqms\\data\\expenses.json'
+2026-09-13 21:54:45,358 - WARNING - Operation failed: Could not save expenses to C:\Users\user\AppData\Local\Temp\tmpa13bgqms\data\expenses.json: [Errno 2] No such file or directory: 'C:\\Users\\user\\AppData\\Local\\Temp\\tmpa13bgqms\\data\\expenses.json'
+2026-09-13 21:54:45,358 - WARNING - Operation failed: Could not save expenses to C:\Users\user\AppData\Local\Temp\tmpa13bgqms\data\expenses.json: [Errno 2] No such file or directory: 'C:\\Users\\user\\AppData\\Local\\Temp\\tmpa13bgqms\\data\\expenses.json'
+2026-09-13 21:54:45,358 - ERROR - Unexpected application error
+Traceback (most recent call last):
+  File "F:\Euron\GitHub\pylearn2\PersonalExpense\main.py", line 77, in run
+    choice = input("Choose an option: ").strip()
+             ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "<stdin>", line 21, in fake_input
+StopIteration
+2026-09-13 21:54:45,359 - INFO - Expense tracker stopped
+2026-09-13 21:54:57,084 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\data\expenses.json
+2026-09-13 21:54:57,085 - INFO - Added and saved an expense
+2026-09-13 21:54:57,086 - INFO - Added and saved an expense
+2026-09-13 21:54:57,086 - INFO - Saved expenses and exited
+2026-09-13 21:54:57,086 - INFO - Expense tracker stopped
+2026-09-13 21:54:57,087 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\data\invalid_0.json
+2026-09-13 21:54:57,087 - WARNING - Operation failed: Amount must be a number.
+2026-09-13 21:54:57,088 - INFO - Saved expenses and exited
+2026-09-13 21:54:57,088 - INFO - Expense tracker stopped
+2026-09-13 21:54:57,088 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\data\invalid_1.json
+2026-09-13 21:54:57,088 - WARNING - Operation failed: Amount must be greater than zero.
+2026-09-13 21:54:57,088 - INFO - Saved expenses and exited
+2026-09-13 21:54:57,088 - INFO - Expense tracker stopped
+2026-09-13 21:54:57,089 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\data\invalid_2.json
+2026-09-13 21:54:57,089 - WARNING - Operation failed: Category cannot be empty.
+2026-09-13 21:54:57,090 - INFO - Saved expenses and exited
+2026-09-13 21:54:57,090 - INFO - Expense tracker stopped
+2026-09-13 21:54:57,090 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\missing\expenses.json
+2026-09-13 21:54:57,091 - INFO - Saved expenses and exited
+2026-09-13 21:54:57,092 - INFO - Expense tracker stopped
+2026-09-13 21:54:57,092 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\data\interrupt.json
+2026-09-13 21:54:57,092 - INFO - Application interrupted by user
+2026-09-13 21:54:57,092 - INFO - Expense tracker stopped
