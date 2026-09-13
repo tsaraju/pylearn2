@@ -9,41 +9,78 @@ Sample Input:
 Enter marks of students
 
 Sample Output:
+
+python .\main.py
+Enter the number of students: invalid
+Invalid input: invalid literal for int() with base 10: 'invalid'
+
 python .\main.py
 Enter the number of students: 2
 
 Processing Student 1
-Enter student name: rani
-Enter roll number: 2
-Enter marks for subject 1: 70
-Enter marks for subject 2: 87
-Enter marks for subject 3: 96
-Enter marks for subject 4: 79
-Enter marks for subject 5: 89
+Enter student name: raju
+Enter roll number: 5
+Enter marks for subject 1: 80
+Enter marks for subject 2: 97
+Enter marks for subject 3: 78
+Enter marks for subject 4: 86
+Enter marks for subject 5: 90
 
 ----- Student Result -----
-Name       : rani
-Roll Number: 2
-Total      : 421.00
-Percentage : 84.20%
+Name       : raju
+Roll Number: 5
+Total      : 431.00
+Percentage : 86.20%
 Grade      : A
 Status     : PASS
 --------------------------
 
 Processing Student 2
-Enter student name: raju
-Enter roll number: 6
+Enter student name: rani
+Enter roll number: 3
 Enter marks for subject 1: 90
-Enter marks for subject 2: 96
+Enter marks for subject 2: 56
 Enter marks for subject 3: 87
-Enter marks for subject 4: 95
-Enter marks for subject 5: 99
+Enter marks for subject 4: 34
+Enter marks for subject 5: 20
 
 ----- Student Result -----
-Name       : raju
-Roll Number: 6
-Total      : 467.00
-Percentage : 93.40%
-Grade      : A+
-Status     : PASS
+Name       : rani
+Roll Number: 3
+Total      : 287.00
+Percentage : 57.40%
+Grade      : D
+Status     : FAIL
 --------------------------
+
+python .\main.py
+Enter the number of students: 2
+
+Processing Student 1
+Enter student name: 
+Enter roll number: 
+Error processing Student 1: Student name cannot be empty.
+Error logged. Continuing with the next student...
+
+
+Processing Student 2
+Enter student name: 
+Enter roll number: 
+Error processing Student 2: Student name cannot be empty.
+Error logged. Continuing with the next student...
+
+python .\main.py
+Enter the number of students: 1
+
+Processing Student 1
+Enter student name: raju
+Enter roll number: 6
+Enter marks for subject 1: -10
+Error processing Student 1: Mark for subject 1 must be between 0 and 100.
+Error logged. Continuing with the next student...
+
+student_results.log:
+2026-09-13 20:28:09,359 - ERROR - Invalid number of students: invalid literal for int() with base 10: 'invalid'
+2026-09-13 20:30:14,476 - ERROR - Error processing student 1: Student name cannot be empty.
+2026-09-13 20:30:17,247 - ERROR - Error processing student 2: Student name cannot be empty.
+2026-09-13 20:31:15,641 - ERROR - Error processing student 1: Mark for subject 1 must be between 0 and 100.
