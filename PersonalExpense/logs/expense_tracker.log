@@ -33,3 +33,26 @@ StopIteration
 2026-09-13 21:54:57,092 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmp4tv9qvpy\data\interrupt.json
 2026-09-13 21:54:57,092 - INFO - Application interrupted by user
 2026-09-13 21:54:57,092 - INFO - Expense tracker stopped
+2026-09-13 23:10:48,890 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpp6bd_xbw\nested\data\expenses.json
+2026-09-13 23:10:48,894 - INFO - Added and saved an expense
+2026-09-13 23:10:48,895 - INFO - Added and saved an expense
+2026-09-13 23:10:48,895 - INFO - Saved expenses and exited
+2026-09-13 23:10:48,895 - INFO - Expense tracker stopped
+2026-09-13 23:10:48,896 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpp6bd_xbw\invalid_0.json
+2026-09-13 23:10:48,897 - WARNING - Operation failed: Amount must be a number.
+2026-09-13 23:10:48,897 - INFO - Saved expenses and exited
+2026-09-13 23:10:48,897 - INFO - Expense tracker stopped
+2026-09-13 23:10:48,898 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpp6bd_xbw\invalid_1.json
+2026-09-13 23:10:48,898 - WARNING - Operation failed: Amount must be greater than zero.
+2026-09-13 23:10:48,898 - INFO - Saved expenses and exited
+2026-09-13 23:10:48,898 - INFO - Expense tracker stopped
+2026-09-13 23:10:48,899 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpp6bd_xbw\invalid_category.json
+2026-09-13 23:10:48,899 - WARNING - Operation failed: Category cannot be empty.
+2026-09-13 23:10:48,901 - INFO - Saved expenses and exited
+2026-09-13 23:10:48,901 - INFO - Expense tracker stopped
+2026-09-13 23:10:48,901 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpp6bd_xbw\missing\expenses.json
+2026-09-13 23:10:48,903 - INFO - Saved expenses and exited
+2026-09-13 23:10:48,903 - INFO - Expense tracker stopped
+2026-09-13 23:10:48,904 - INFO - Loaded expenses from C:\Users\user\AppData\Local\Temp\tmpp6bd_xbw\interrupt\expenses.json
+2026-09-13 23:10:48,904 - INFO - Application interrupted by user
+2026-09-13 23:10:48,904 - INFO - Expense tracker stopped

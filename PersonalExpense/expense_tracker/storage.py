@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 from expense_tracker.models import Expense
 
@@ -17,6 +18,7 @@ def save_expenses(expenses, filename):
     ]
 
     try:
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
         with open(filename, "w", encoding="utf-8") as file:
             json.dump(data, file, indent=4)
     except OSError as error:
