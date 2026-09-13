@@ -59,7 +59,7 @@ Login failed: Invalid username or password.
 5. Logout
 6. Exit
 ==========================
-Enter your choice: 2
+Enter your choice: 3
 Please login first.
 
 ==========================
@@ -102,9 +102,24 @@ Result: 300.0
 5. Logout
 6. Exit
 ==========================
+Enter your choice: 2
+Enter first number: 10
+Enter second number: 'string'
+Calculation failed: Please enter valid numbers.
+
+==========================
+     MENU
+==========================
+1. Login
+2. Calculate
+3. Read a File
+4. Write a File
+5. Logout
+6. Exit
+==========================
 Enter your choice: 4
 Enter file name to write: a.txt
-Enter content to write: hi hello 
+Enter content to write: hello hi
 File written successfully.
 
 ==========================
@@ -121,7 +136,7 @@ Enter your choice: 3
 Enter file name to read: a.txt
 
 File contents:
-hi hello
+hello hi
 
 ==========================
      MENU
@@ -149,28 +164,48 @@ Successfully logged out.
 Enter your choice: 6
 Goodbye!
 
+To catch the Critical Error in Logs add the below line in main funciton and then run :
+raise ValueError("Database connection failed")
+
+python .\main.py
+CRITICAL: Unexpected application failure.
+
 Logs:
 application.log:
-2026-09-12 18:17:17,481 - INFO - Application started
-2026-09-12 18:17:19,452 - DEBUG - User selected menu option: 1
-2026-09-12 18:17:24,572 - WARNING - Invalid login attempt
-2026-09-12 18:17:47,288 - DEBUG - User selected menu option: 2
-2026-09-12 18:17:47,289 - WARNING - Calculation attempted without login
-2026-09-12 18:17:49,408 - DEBUG - User selected menu option: 1
-2026-09-12 18:18:00,934 - INFO - User logged in
-2026-09-12 18:18:07,697 - DEBUG - User selected menu option: 2
-2026-09-12 18:18:07,698 - DEBUG - Calculation operation started
-2026-09-12 18:18:18,177 - INFO - Calculation completed
-2026-09-12 18:18:23,379 - DEBUG - User selected menu option: 4
-2026-09-12 18:18:35,823 - DEBUG - Attempting to write file: a.txt
-2026-09-12 18:18:35,826 - INFO - File written successfully: a.txt
-2026-09-12 18:18:39,636 - DEBUG - User selected menu option: 3
-2026-09-12 18:18:42,490 - DEBUG - Attempting to read file: a.txt
-2026-09-12 18:18:42,492 - INFO - File read successfully: a.txt
-2026-09-12 18:18:57,070 - DEBUG - User selected menu option: 5
-2026-09-12 18:18:57,070 - INFO - User logged out
-2026-09-12 18:18:58,973 - DEBUG - User selected menu option: 6
-2026-09-12 18:18:58,973 - INFO - Application stopped
+2026-09-13 19:05:37,084 - INFO - Application started
+2026-09-13 19:05:42,489 - DEBUG - User selected menu option: 1
+2026-09-13 19:05:48,078 - WARNING - Invalid login attempt
+2026-09-13 19:08:38,256 - DEBUG - User selected menu option: 3
+2026-09-13 19:08:38,257 - WARNING - File read attempted without login
+2026-09-13 19:09:30,928 - DEBUG - User selected menu option: 1
+2026-09-13 19:09:36,853 - INFO - User logged in
+2026-09-13 19:09:40,820 - DEBUG - User selected menu option: 2
+2026-09-13 19:09:40,822 - DEBUG - Calculation operation started
+2026-09-13 19:09:53,514 - INFO - Calculation completed
+2026-09-13 19:09:57,931 - DEBUG - User selected menu option: 2
+2026-09-13 19:09:57,932 - DEBUG - Calculation operation started
+2026-09-13 19:10:10,815 - ERROR - Non-numeric value entered
+2026-09-13 19:10:54,379 - DEBUG - User selected menu option: 4
+2026-09-13 19:11:07,627 - DEBUG - Attempting to write file: a.txt
+2026-09-13 19:11:07,647 - INFO - File written successfully: a.txt
+2026-09-13 19:11:16,342 - DEBUG - User selected menu option: 3
+2026-09-13 19:11:24,655 - DEBUG - Attempting to read file: a.txt
+2026-09-13 19:11:24,660 - INFO - File read successfully: a.txt
+2026-09-13 19:11:38,262 - DEBUG - User selected menu option: 5
+2026-09-13 19:11:38,263 - INFO - User logged out
+2026-09-13 19:11:41,818 - DEBUG - User selected menu option: 6
+2026-09-13 19:11:41,819 - INFO - Application stopped
+2026-09-13 19:13:16,437 - INFO - Application started
 
 error.log:
-2026-09-12 18:17:24,573 - ERROR - Login error: Invalid username or password.
+2026-09-13 19:05:48,081 - ERROR - Login error: Invalid username or password.
+2026-09-13 19:10:10,816 - ERROR - Calculation error: Please enter valid numbers.
+2026-09-13 19:13:16,438 - CRITICAL - Unexpected application failure: Database connection failed
+Traceback (most recent call last):
+  File "F:\Euron\GitHub\pylearn2\logging_application\main.py", line 177, in <module>
+    main()
+    ~~~~^^
+  File "F:\Euron\GitHub\pylearn2\logging_application\main.py", line 22, in main
+    raise ValueError("Database connection failed")
+ValueError: Database connection failed
+
